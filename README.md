@@ -11,9 +11,9 @@ This project use [Nix](https://nixos.org/) to manage the dependencies, so you ma
 > nix flakes is an experimental feature of Nix, so you may need extra configuration.
 
 
-You may need to change the project's name in relevant files. You can use the search tool in VSCode to replace all the `DemoProject` into your project's name. Don't forget to change the `DemoProject` in `Makefile`.
+You may need to change the project's name in relevant files. You can use the search tool in VSCode to replace all the `FontaineWintenberger` into your project's name. Don't forget to change the `FontaineWintenberger` in `Makefile`.
 
-Then you can start to develop your project by modifying files in the `DemoProject`(may be replaced with your own name) directory.
+Then you can start to develop your project by modifying files in the `FontaineWintenberger`(may be replaced with your own name) directory.
 
 If you want to view the blueprint, you need to modify files in the `blueprint` directory, starting with `blueprint/src/content.tex`. You need to at least change the url in `\home` and `\dochome`. If you want to view it locally, change them into `localhost:8080` and `localhost:8080/doc`.
 

@@ -1,11 +1,11 @@
 import Lake
 open Lake DSL
 
-package «DemoProject» where
+package «FontaineWintenberger» where
   -- add package configuration options here
 
 @[default_target]
-lean_lib «DemoProject» where
+lean_lib «FontaineWintenberger» where
   -- add library configuration options here
 
 require mathlib from git
