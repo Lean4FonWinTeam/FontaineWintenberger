@@ -24,7 +24,7 @@ jobs:
           fetch-depth: 2
           lfs: true
       - run: |
-          nix develop --command make blueprint
+          nix develop --command make serve
       - name: Fix permissions
         run: |
           chmod -c -R +rX "blueprint/web/" | while read line; do
