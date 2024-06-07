@@ -29,6 +29,9 @@ jobs:
         with:
           fetch-depth: 2
           lfs: true
+      - name: Patch home and dochome url
+        run: |
+          echo "\\home{https://lean4fonwinteam.github.io/FontaineWintenberger/}\n\\dochome{https://lean4fonwinteam.github.io/FontaineWintenberger/doc/}" > blueprint/src/homeurl.tex
       - run: |
           nix develop --command make blueprint
       - name: Fix permissions
