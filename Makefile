@@ -7,7 +7,7 @@ PROJECT = FontaineWintenberger
 all : build blueprint
 
 build:
-	(lake -Kenv=dev update doc-gen4 && lake -Kenv=dev exe cache get && lake -Kenv=dev build && lake -Kenv=dev build ${PROJECT}:docs)
+	(lake -Kenv=dev exe cache get && lake -Kenv=dev build && lake -Kenv=dev build ${PROJECT}:docs)
 
 blueprint: build
 	(cd blueprint && inv all && cp -r ../.lake/build/doc ./web/)
