@@ -23,7 +23,7 @@ The first three sections serves for the tilting equivalence. The remaining parts
     % \uses{Valuation.integer}
 
     Let $K$ be a topological field. We say that $K$ is a \emph{perfectoid field} if and only if the following conditions are satisfied:\\
-    (a) the topology on K is induced by a valuation $\| \cdot \| : K → \R _{\ge0}$, and $K$ is complete for this topology;\\
+    (a) the topology on K is induced by a valuation $\| \cdot \| : K \to \R_{\ge0}$, and $K$ is complete for this topology;\\
     (b) there exists a non-unit $\pi \in \O_K$ such that $p \in \pi^p \O_K$;\\
     (c) every element of $\O_K/p\O_K$ is a $p$th-power.
 \end{definition}
@@ -39,10 +39,10 @@ The first three sections serves for the tilting equivalence. The remaining parts
     \notready
 
     There is a functor 
-    \begin{align}
-        \left \{ \text{finite field extensions of } K \right \} & \to \left \{ \text{finite fields extension of K^\flat} \right \} \\
+    \begin{align*}
+        \left \{ \text{finite field extensions of } K \right \} & \to \left \{ \text{finite fields extension of} K^\flat \right \} \\
         L & \mapsto L^\flat
-    \end{align}
+    \end{align*}
 
 \end{definition}
 
@@ -69,6 +69,7 @@ The first three sections serves for the tilting equivalence. The remaining parts
 \end{theorem}
 
 \begin{proof}
+    \uses{tilting_finite_degree_preserving}
     \notready
 
     sorry
@@ -83,7 +84,7 @@ The first three sections serves for the tilting equivalence. The remaining parts
     \emph{This definition further need relationship between Galois group of $K$ and the category of finite fields extensions over $K$}
 
     There exists an isomorphism of absolute Galois groups
-    $$ \Gal_K \isom \Gal_{K^\flat}.$$
+    $$ \Gal_K \simeq \Gal_{K^\flat}.$$
 \end{definition}
 
 \section{Calculation of $\Q_p^{\cyc}$}
