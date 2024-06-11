@@ -13,7 +13,17 @@
 
 \tableofcontents
 
-The first three sections serves for the tilting equivalence. The remaining parts serves for the concrete example of cyclotomic fields.
+The first section records currently missing infrastructures in Mathlib. The following three sections serves for the tilting equivalence. The remaining parts serves for the concrete example of cyclotomic fields.
+
+\section{Missing Infrastructures in Mathlib}
+In this section, we record the missing infrastructures in a rough way. All definitions and theorem under a same topic will be bundled in a single definition.
+
+\begin{definition}
+    \label{Relate Galois Group with Category of Finite Field Extensions}
+    \notready
+
+    Inteperate Galois group as functors on $ \text{FinExt}_K $ satisfying certain property. Show that $\text{FinExt}_K \simeq \text{FinExt}_K'$ induces an isomorphism $\Gal_K \simeq \Gal_{K'}$.
+\end{definition}
 
 \section{Perfectoid Fields}
 
@@ -77,11 +87,11 @@ The first three sections serves for the tilting equivalence. The remaining parts
 
 \begin{definition}
     \label{Galois Isomorphism of Perfectoid Fields}
+    
     \uses{Tilting Functor (Finite Extension)}
     \uses{tilting_finite_equivalence_of_category}
+    \uses{Relate Galois Group with Category of Finite Field Extensions}
     \notready
-
-    \emph{This definition further need relationship between Galois group of $K$ and the category of finite fields extensions over $K$}
 
     There exists an isomorphism of absolute Galois groups
     $$ \Gal_K \simeq \Gal_{K^\flat}.$$
