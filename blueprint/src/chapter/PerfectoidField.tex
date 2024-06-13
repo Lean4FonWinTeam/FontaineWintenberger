@@ -1,0 +1,12 @@
+\section{Perfectoid Fields}
+
+\begin{definition}[Perfectoid Fields]
+    \label{Perfectoid Field}
+    \lean{PerfectoidField}
+    % \uses{Valuation.integer}
+
+    Let $K$ be a topological field. We say that $K$ is a \emph{perfectoid field} if and only if the following conditions are satisfied:\\
+    (a) the topology on K is induced by a valuation $\| \cdot \| : K \to \R_{\ge0}$, and $K$ is complete for this topology;\\
+    (b) there exists a non-unit $\pi \in \O_K$ such that $p \in \pi^p \O_K$;\\
+    (c) every element of $\O_K/p\O_K$ is a $p$th-power.
+\end{definition}

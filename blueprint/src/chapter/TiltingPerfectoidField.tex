@@ -1,0 +1,89 @@
+
+\section{The Tilting Equivalence for Perfectoid Fields}
+
+\begin{definition}
+    \label{Tilting Functor}
+    \notready
+
+    There is an equivalence of category
+    \begin{align*}
+        (-)^\flat : \left \{ \text{Perfectoid fields over } K \right \} & \to \left \{ \text{Perfectoid fields over } K^\flat \right \} : (-)^\# \\
+        L & \mapsto L^\flat
+    \end{align*}
+
+\end{definition}
+
+\begin{theorem}
+    \label{untilt_same_degree}
+    \uses{Tilting Functor}
+    \notready
+
+    Let $M$ be a finite extension of $K^\flat$. ($M$ is automatically a perfectoid field. add this theorem) Then its untilt $M^\#$ is of the same degree. 
+
+\end{theorem}
+
+\begin{proof}
+    \notready
+
+    sorry
+\end{proof}
+
+
+
+\begin{definition}
+    \label{Tilting Functor (Finite Extension)}
+    \uses{Tilting Fuctor}
+    \notready
+
+    There is a functor 
+    \begin{align*}
+        \left \{ \text{finite field extensions of } K \right \} & \to \left \{ \text{finite fields extension of} K^\flat \right \} \\
+        L & \mapsto L^\flat
+    \end{align*}
+
+\end{definition}
+
+\begin{theorem}
+    \label{tilting_finite_degree_preserving}
+    \uses{Tilting Functor (Finite Extension)}
+    \notready
+
+    The functor above is degree preserving.
+\end{theorem}
+
+\begin{proof}
+    \notready
+
+    sorry
+\end{proof}
+
+\begin{theorem}
+    \label{tilting_finite_equivalence_of_category}
+    \uses{Tilting Functor (Finite Extension)}
+    \notready
+
+    The functor above is an equivalence of category.
+\end{theorem}
+
+\begin{proof}
+    \uses{tilting_finite_degree_preserving}
+    \notready
+
+    sorry
+\end{proof}
+
+\begin{definition}[Galois Isomorphism of Perfectoid Fields]
+    \label{Galois Isomorphism of Perfectoid Fields}
+
+    \uses{
+        Tilting Functor (Finite Extension), 
+        tilting_finite_equivalence_of_category, 
+        Relate Galois Group with Category of Finite Field Extensions
+        }
+    \notready
+
+    There exists an isomorphism of absolute Galois groups
+    $$ \Gal_K \simeq \Gal_{K^\flat}.$$
+
+    \emph{Do we need write down the explicit isomorphism?}
+\end{definition}

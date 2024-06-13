@@ -15,94 +15,17 @@
 
 The first section records currently missing infrastructures in Mathlib. The following three sections serves for the tilting equivalence. The remaining parts serves for the concrete example of cyclotomic fields.
 
-\section{Missing Infrastructures in Mathlib}
-In this section, we record the missing infrastructures in a rough way. All definitions and theorem under a same topic will be bundled in a single definition.
+\input{\MyPath/chapter/Infrastructure.tex}
 
-\begin{definition}
-    \label{Relate Galois Group with Category of Finite Field Extensions}
-    \notready
+\input{\MyPath/chapter/PerfectoidField.tex}
 
-    Inteperate Galois group as functors on $ \text{FinExt}_K $ satisfying certain property. Show that $\text{FinExt}_K \simeq \text{FinExt}_K'$ induces an isomorphism $\Gal_K \simeq \Gal_{K'}$.
-\end{definition}
+\input{\MyPath/chapter/Almost.tex}
 
-\section{Perfectoid Fields}
+\input{\MyPath/chapter/TiltingPerfectoidField.tex}
 
-\begin{definition}[Perfectoid Fields]
-    \label{Perfectoid Field}
-    \lean{PerfectoidField}
-    % \uses{Valuation.integer}
-
-    Let $K$ be a topological field. We say that $K$ is a \emph{perfectoid field} if and only if the following conditions are satisfied:\\
-    (a) the topology on K is induced by a valuation $\| \cdot \| : K \to \R_{\ge0}$, and $K$ is complete for this topology;\\
-    (b) there exists a non-unit $\pi \in \O_K$ such that $p \in \pi^p \O_K$;\\
-    (c) every element of $\O_K/p\O_K$ is a $p$th-power.
-\end{definition}
-
-
-
-\section{Almost Mathematics}
-
-\section{The Tilting Equivalence for Perfectoid Fields}
-
-\begin{definition}
-    \label{Tilting Functor (Finite Extension)}
-    \notready
-
-    There is a functor 
-    \begin{align*}
-        \left \{ \text{finite field extensions of } K \right \} & \to \left \{ \text{finite fields extension of} K^\flat \right \} \\
-        L & \mapsto L^\flat
-    \end{align*}
-
-\end{definition}
-
-\begin{theorem}
-    \label{tilting_finite_degree_preserving}
-    \uses{Tilting Functor (Finite Extension)}
-    \notready
-
-    The functor above is degree preserving.
-\end{theorem}
-
-\begin{proof}
-    \notready
-
-    sorry
-\end{proof}
-
-\begin{theorem}
-    \label{tilting_finite_equivalence_of_category}
-    \uses{Tilting Functor (Finite Extension)}
-    \notready
-
-    The functor above is an equivalence of category.
-\end{theorem}
-
-\begin{proof}
-    \uses{tilting_finite_degree_preserving}
-    \notready
-
-    sorry
-\end{proof}
-
-\begin{definition}[Galois Isomorphism of Perfectoid Fields]
-    \label{Galois Isomorphism of Perfectoid Fields}
-
-    \uses{
-        Tilting Functor (Finite Extension), 
-        tilting_finite_equivalence_of_category, 
-        Relate Galois Group with Category of Finite Field Extensions
-        }
-    \notready
-
-    There exists an isomorphism of absolute Galois groups
-    $$ \Gal_K \simeq \Gal_{K^\flat}.$$
-\end{definition}
-
-\section{Calculation of $\Q_p^{\cyc}$}
-
+\input{\MyPath/chapter/Cyclotomic.tex}
 
 \section{Example}
 Here you can use LaTex. \cite{marcus}. You must cite something to make it work.
 
-\input{demo}
+%\input{demo}
